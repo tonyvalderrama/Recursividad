@@ -1,19 +1,19 @@
 # Recursividad
 Ejemplos del uso de recursión en C++
 
-### factorial.cpp
+## factorial.cpp
 Cálculo del factorial de un número. Contiene una función recursiva y otra que no usa recursividad para comparar.
 
-### Naturales.cpp
+## Naturales.cpp
 Ejemplo sencillo de una función que calcula la suma de todos los números naturales
 
-### Secuencia.cpp
+## Secuencia.cpp
 Recibe un número (n) del usuario.
  * Si n es par, divídelo entre 2
  * Si es impar, multiplícalo por 3 y súmale 1
  * La secuencia termina cuando N == 1
 
-### Invertido.cpp
+## Invertido.cpp
 ##### Problema
 Dado un número entero positivo `N`, escribe una función recursiva que devuelva el número con sus dígitos en orden inverso.
 
@@ -38,7 +38,7 @@ Número invertido: 4321
 - No puedes usar ciclos (`for`, `while`).
 - La solución debe ser completamente recursiva.
 
-### Merge2SortedLists.cpp
+## Merge2SortedLists.cpp
 Resuelve el problema en https://leetcode.com/problems/merge-two-sorted-lists/
 
 ##### Problema
