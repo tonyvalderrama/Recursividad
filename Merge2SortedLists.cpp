@@ -15,12 +15,12 @@ public:
             return list2;
         }
         if (list2 != nullptr) {
-            if (list1->val <= list2->val) {
-                ListNode *temp = list2;
-                list2 = list2->next;
-                temp->next = list1->next;
-                list1->next = temp;
-                list1->next->next = mergeTwoLists(list1->next->next,list2);
+            if (list1->val == list2->val) {
+                ListNode *temp = list1->next;
+                list1->next = list2;
+                list1->next->next = mergeTwoLists(temp,list2->next);
+            } else if (list1->val < list2->val) {
+                list1->next = mergeTwoLists(list1->next,list2);
             } else {
                 ListNode *temp = list1;
                 list1 = list2;
